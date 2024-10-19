@@ -1,0 +1,22 @@
+<mvc:View controllerName="com.logaligroup.invoices.controller.Details"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <Page id="IDGenPage"
+            title="{i18n>invoiceDetails}"
+            showNavButton="true"
+            navButtonPress="onNavBack">
+        <ObjectHeader id="IDGenObjectHeader" title="{northwind>Quantity} x {northwind>ProductName}">
+            <attributes>
+                <ObjectAttribute id="IDGenObjectAttribute1" text="{northwind>ShipName}"/>
+                <ObjectAttribute id="IDGenObjectAttribute2" text="{northwind>ShipAddress}"/>
+                <ObjectAttribute id="IDGenObjectAttribute3" text="{northwind>ShipCity}"/>
+                <ObjectAttribute id="IDGenObjectAttribute4" text="{northwind>ShipPostalCode}"/>
+                <ObjectAttribute id="IDGenObjectAttribute5" text="{northwind>ShipCountry}"/>
+                <ObjectAttribute id="IDGenObjectAttribute6" text="{northwind>CustomerID}"/>
+                <ObjectAttribute id="IDGenObjectAttribute7" text="{northwind>CustomerName}"/>
+            </attributes>
+        </ObjectHeader>
+    </Page>
+
+</mvc:View>

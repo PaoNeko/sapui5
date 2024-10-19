@@ -1,1 +1,6 @@
 /* Enter your custom styles here */
+
+.boldElements {
+    font-weight: 600;
+    margin-top: 8px;
+}

@@ -5,17 +5,16 @@
     
     <Page id="page" title="{i18n>title}">
         <content>
-            <Panel 
-            id="panel"
-            headerText="{i18n>helloPanel}">
-                <content>
-                    <Button 
-                    id="button2"
-                    text="{i18n>showHelloButtonText}"
-                    type="Accept"
-                    press="onShowMessage"/>
-                </content>
-            </Panel>
+
+            <mvc:XMLView id="HelloPanel" 
+                viewName="com.logaligroup.invoices.view.HelloPanel"
+                type="XML"/>
+
+            <mvc:XMLView id="InvoicesList"
+                viewName="com.logaligroup.invoices.view.InvoicesList"
+                type="XML"/>
+
         </content>
     </Page>
+
 </mvc:View>
