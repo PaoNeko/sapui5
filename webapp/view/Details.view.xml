@@ -1,6 +1,7 @@
 <mvc:View controllerName="com.logaligroup.invoices.controller.Details"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:rating="com.logaligroup.invoices.control">
 
     <Page id="IDGenPage"
             title="{i18n>invoiceDetails}"
@@ -17,6 +18,11 @@
                 <ObjectAttribute id="IDGenObjectAttribute7" text="{northwind>CustomerName}"/>
             </attributes>
         </ObjectHeader>
+
+        <rating:ProductsRating 
+            id="IDGenProductRating"
+            class="sapUiSmallMarginBeginEnd"
+            change="onRatingChange"/>
     </Page>
 
 </mvc:View>
